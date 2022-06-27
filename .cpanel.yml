@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/verq8985/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp lomba.html $DEPLOYPATH
+    - /bin/cp futsal.html $DEPLOYPATH
+    - /bin/cp cc.html $DEPLOYPATH
+    - /bin/cp benteng.html $DEPLOYPATH
+    - /bin/cp cosplay.html $DEPLOYPATH
+    - /bin/cp dance.html $DEPLOYPATH
+    - /bin/cp debat.html $DEPLOYPATH
+    - /bin/cp lkbb.html $DEPLOYPATH
+    - /bin/cp ml.html $DEPLOYPATH
+    - /bin/cp st.html $DEPLOYPATH
+    - /bin/cp vokal.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R fonts $DEPLOYPATH

@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'abril_fatface';
+  src: url('../fonts/Abril Fatface/abrilfatface-regular-webfont.woff2') format('woff2'), url('../fonts/Abril Fatface/abrilfatface-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bluu_next';
+  src: url('../fonts/Bluu Next/bluunext-titling-webfont.woff2') format('woff2'), url('../fonts/Bluu Next/bluunext-titling-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'harry_p';
+  src: url('../fonts/Harry P/harryp-webfont.woff2') format('woff2'), url('../fonts/Harry P/harryp-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-webfont.woff2') format('woff2'), url('../fonts/opensans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'optimusprincepsregular';
+  src: url('../fonts/Optimus Princeps/optimusprinceps-webfont.woff2') format('woff2'), url('optimusprinceps-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewaythin';
+  src: url('../fonts/Raleway/raleway-webfont.woff2') format('woff2'), url('raleway-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  color: black;
+  font-family: 'bluu_next';
+}
+
+body {
+  background-color: #340041;
+  background-size: cover;
+  color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin-top: 80px;
+  background-color: white;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-family: 'harry_p';
+  font-size: 100px;
+}
+h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.logo-ml {
+  z-index: 1;
+  margin-bottom: -70px;
+  width: 200px;
+  border: 5px solid #eaeaea;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 80%);
+  border-radius: 50%;
+}
+
+.btn {
+  margin-left: 175px;
+}
+
+.playbutton-1 {
+  position: relative;
+  font-family: sans-serif;
+  border: 0px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid white;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  transform: skewY(-9deg);
+}
+.playbutton-2 {
+  position: absolute;
+  display: inline-block;
+  font-family: sans-serif;
+  border: 0px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid white;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-left: 5px;
+  padding: 5px 20px;
+  transform: skewY(-9deg);
+}
+
+.playbutton-1:hover,
+.playbutton-2:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+.description-container {
+  width: 100%;
+  display: flex;
+  background: #15001a;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 20%;
+  transform: skewY(9deg);
+}
+
+.description-inner p {
+  color: white;
+  text-align: center;
+  max-width: 520px;
+  font-family: 'optimusprincepsregular';
+  transform: skewY(-9deg);
+}
+
+.fa {
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+  transform: scale(1.6);
+  padding-top: 30px;
+}
+.fa:hover {
+  opacity: 0.7;
+  color: #73cfd9;
+}
+.fa-instagram:hover {
+  opacity: 0.7;
+  background: -webkit-linear-gradient(#8540bd, #ffa94c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-youtube:hover {
+  opacity: 0.7;
+  color: red;
+}
+.fa-whatsapp:hover {
+  opacity: 0.7;
+  color: green;
+}
+.copyright {
+  padding-top: 50px;
+  color: white;
+}
+
+.copyright p {
+  position: fixed;
+  font-size: 14px;
+  bottom: 25;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #3d5a80, 0 0 15px #3d5a80, 0 0 20px #3d5a80, 0 0 25px #3d5a80, 0 0 30px #3d5a80;
+  }
+
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #98c1d9, 0 0 15px #98c1d9, 0 0 20px #98c1d9, 0 0 25px #98c1d9, 0 0 30px #98c1d9, 0 0 35px #98c1d9;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .fa {
+    transform: scale(1.4);
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .playbutton {
+    transform: scale(0.8);
+  }
+  img {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  h1 {
+    font-size: 50px;
+  }
+  .playbutton {
+    transform: scale(0.6);
+  }
+
+  img.logo-ml {
+    z-index: 1;
+    margin-bottom: -70px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #eaeaea;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 80%);
+  }
+
+  .description-inner p {
+    color: white;
+    text-align: justify;
+    max-width: 520px;
+    font-family: 'optimusprincepsregular';
+    transform: skewY(-9deg);
+  }
+
+  .btn {
+    margin-left: auto;
+  }
+
+  .playbutton-1 {
+    position: relative;
+    font-family: sans-serif;
+    border: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    border: 1.5px solid white;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 5px 32px;
+    transform: skewY(-9deg);
+  }
+  .playbutton-2 {
+    position: absolute;
+    display: inline-block;
+    font-family: sans-serif;
+    border: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    border: 1.5px solid white;
+    cursor: pointer;
+    margin-top: -5px;
+    padding: 5px 32px;
+    transform: skewY(-9deg);
+  }
+}

@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'abril_fatface';
+  src: url('../fonts/Abril Fatface/abrilfatface-regular-webfont.woff2') format('woff2'), url('../fonts/Abril Fatface/abrilfatface-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bluu_next';
+  src: url('../fonts/Bluu Next/bluunext-titling-webfont.woff2') format('woff2'), url('../fonts/Bluu Next/bluunext-titling-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'harry_p';
+  src: url('../fonts/Harry P/harryp-webfont.woff2') format('woff2'), url('../fonts/Harry P/harryp-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/opensans-webfont.woff2') format('woff2'), url('../fonts/opensans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'optimusprincepsregular';
+  src: url('../fonts/Optimus Princeps/optimusprinceps-webfont.woff2') format('woff2'), url('../fonts/Optimus Princeps/optimusprinceps-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('../fonts/Lato/lato-regular-webfont.woff2') format('woff2'), url('../fonts/Lato/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: auto;
+  box-sizing: border-box;
+  color: lightskyblue;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #10141b;
+  background-image: url(../img/stars.png);
+  background-size: 80%;
+}
+h1 {
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'harry_p';
+  font-size: 90px;
+  margin-bottom: 12px;
+  margin-top: 50px;
+  background: linear-gradient(-45deg, transparent 48%, rgba(255, 255, 255, 0.8) 50%, transparent 52% 100%), linear-gradient(45deg, #f66b0e, #5f0075, #ec994b);
+  animation: cahaya 3s ease infinite alternate;
+  background-size: 500% 500%, 100% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes cahaya {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
+}
+
+/* Lomba - Lomba */
+.lomba {
+  display: block;
+}
+
+.lomba video {
+  padding-bottom: 80px;
+}
+
+.nama-lomba {
+  color: white;
+}
+
+.ingfo {
+  background: linear-gradient(135deg, #5f0075, #15001a);
+  color: white;
+}
+
+.lomba-1 video {
+  width: 52%;
+  float: right;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-1 {
+  font-family: 'bluu_next';
+  text-align: left;
+  padding: 160px 0;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-1 {
+  position: relative;
+  top: -170px;
+  right: 133px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+.lomba-2 video {
+  z-index: -1;
+  width: 52%;
+  float: left;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-2 {
+  font-family: 'bluu_next';
+  text-align: right;
+  padding: 320px 0;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-2 {
+  position: relative;
+  top: -330px;
+  left: 455px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+.lomba-3 video {
+  width: 52%;
+  float: right;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-3 {
+  font-family: 'bluu_next';
+  text-align: left;
+  padding: 160px 0;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-3 {
+  position: relative;
+  top: -170px;
+  right: 130px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+.lomba-4 video {
+  width: 52%;
+  float: left;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-4 {
+  font-family: 'bluu_next';
+  text-align: right;
+  padding: 320px 0;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-4 {
+  position: relative;
+  top: -330px;
+  left: 480px;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+.lomba-5 video {
+  width: 52%;
+  float: right;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-5 {
+  font-family: 'bluu_next';
+  text-align: left;
+  padding: 160px 0;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-5 {
+  position: relative;
+  top: -170px;
+  right: 130px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+.lomba-6 video {
+  width: 52%;
+  float: left;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-6 {
+  font-family: 'bluu_next';
+  text-align: right;
+  padding: 320px 0;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-6 {
+  position: relative;
+  top: -330px;
+  left: 460px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+.lomba-7 video {
+  width: 52%;
+  float: right;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-7 {
+  font-family: 'bluu_next';
+  text-align: left;
+  padding: 160px 0;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-7 {
+  position: relative;
+  top: -170px;
+  right: 130px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+.lomba-8 video {
+  width: 52%;
+  float: left;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-8 {
+  font-family: 'bluu_next';
+  text-align: right;
+  padding: 320px 0;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-8 {
+  position: relative;
+  top: -330px;
+  left: 460px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+.lomba-9 video {
+  width: 52%;
+  float: right;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-9 {
+  font-family: 'bluu_next';
+  text-align: left;
+  padding: 160px 0;
+  margin-left: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-9 {
+  position: relative;
+  top: -170px;
+  right: 130px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+.lomba-10 video {
+  z-index: -1;
+  width: 52%;
+  float: left;
+  background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
+}
+
+p.nama-lomba-10 {
+  font-family: 'bluu_next';
+  text-align: right;
+  padding: 320px 0;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 5px;
+}
+
+.button-10 {
+  position: relative;
+  top: -330px;
+  left: 460px;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'latoregular';
+  margin: 15 0;
+}
+
+/* Akhir Lomba - Lomba */
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Nasalization';
+  margin: 15;
+  color: white;
+}
+.juknis-button {
+  width: 530px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Nasalization';
+  margin: 15;
+  color: white;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+}
+.juknis-button:hover,
+.button:hover {
+  transform: scale(1.02);
+}
+
+:root {
+  --cbz: ease-in-out;
+  --dur: 1s;
+}
+.planet-container {
+  max-width: 700px;
+  width: 100vw;
+}
+.planet-container img {
+  /*Make image not selectable*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.img-button {
+  justify-self: center;
+  align-self: center;
+
+  height: 210px;
+  width: 210px;
+
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  opacity: 1;
+
+  cursor: pointer;
+  z-index: 1;
+
+  transition: opacity ease-in-out, top var(--cbz), left var(--cbz), transform var(--cbz);
+  -webkit-transition: opacity ease-in-out, top var(--cbz), left var(--cbz), transform var(--cbz);
+  transition-duration: var(--dur);
+}
+
+@media screen and (max-width: 600px) {
+  .img-button {
+    height: 120px;
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 572px) {
+  .lomba {
+    overflow: hidden;
+  }
+
+  .button-area {
+    flex-direction: column;
+  }
+
+  p.nama-lomba-1 {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-1 {
+    position: relative;
+    top: -55px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-2 {
+    text-align: right;
+    padding: 90px 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-2 {
+    position: relative;
+    top: -115px;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-3 {
+    text-align: left;
+    padding: 40px 0;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-3 {
+    position: relative;
+    top: -65px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-4 {
+    text-align: right;
+    padding: 90px 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-4 {
+    position: relative;
+    top: -115px;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-5 {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-5 {
+    position: relative;
+    top: -55px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-6 {
+    text-align: right;
+    padding: 80px 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 5px;
+  }
+
+  .button-6 {
+    position: relative;
+    top: -100px;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-7 {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-7 {
+    position: relative;
+    top: -55px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-8 {
+    text-align: right;
+    padding: 98px 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-8 {
+    position: relative;
+    top: -120px;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-9 {
+    text-align: left;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-9 {
+    position: relative;
+    top: -55px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+
+  p.nama-lomba-10 {
+    text-align: right;
+    padding: 98px 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+    margin-top: 5px;
+  }
+
+  .button-10 {
+    position: relative;
+    top: -120px;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15 0;
+  }
+}
