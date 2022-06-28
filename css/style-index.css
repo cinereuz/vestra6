@@ -49,116 +49,146 @@
 
 * {
   font-family: 'bluu_next';
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: #af99da;
+  background-size: 100%;
+  color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero {
-  height: 120vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#landing {
-  height: 100vh;
-}
-
-#landing h1 {
-  position: absolute;
-  z-index: 6;
-  top: 30%;
-  right: 0;
-  left: 70px;
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
+h1 {
+  color: white;
   font-family: 'harry_p';
+  font-size: 100px;
+  margin-bottom: -20px;
+  text-shadow: 2px 2px 4px #000;
 }
 
-#landing img.logves {
-  width: 120px;
-  position: absolute;
-  z-index: 6;
-  top: 5%;
-  right: 0;
-  left: 44.5%;
-  text-align: center;
+@keyframes cahaya {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 100%, 100%;
+  }
 }
 
-.layer3 {
-  z-index: 2;
+p {
+  color: white;
+  text-shadow: 2px 2px 4px #000;
 }
 
-.layer8 {
-  z-index: 7;
-}
-
-.layer2 {
-  z-index: 4;
-}
-
-img.layer9 {
-  z-index: 5;
-  width: 30%;
-  height: 30%;
-}
-
-.btn {
-  position: absolute;
-  top: 60%;
-  z-index: 9;
-  margin: 0 auto;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  padding: 6px 60px;
-  border-radius: 30px;
-  background-color: #474285;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  box-shadow: 5px 0 10px rgba(85, 85, 85, 0.8);
-}
-
-#about {
-  padding: 70px 0;
-  line-height: 25px;
-  color: #fff;
-  background-color: #af99da;
-}
-
-.content {
-  z-index: 99;
-  position: relative;
-  text-align: center;
-  width: 65%;
-  margin: 0 auto;
-}
-
-.content p {
-  text-align: justify;
-  text-indent: 100px;
-  font-family: 'optimusprincepsregular';
-}
-
-img.logovestra {
+img {
   height: 150px;
   margin-top: 80px;
   margin-bottom: 10px;
+}
+
+img.backg {
+  overflow: hidden;
+  position: absolute;
+  top: -80px;
+  width: 1263px;
+  height: 720px;
+  z-index: -2;
+}
+
+.playbutton {
+  font-family: sans-serif;
+  border: 0px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid white;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding: 5px 60px;
+}
+
+.playbutton:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s ease-in;
+  text-transform: uppercase;
+}
+
+.indicator {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  transform: rotate(45deg);
+  margin-bottom: 100px;
+}
+
+.indicator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  animation: animate 2s linear infinite;
+}
+
+.indicator span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0s;
+}
+.indicator span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+.indicator span:nth-child(3) {
+  top: -0px;
+  left: -0px;
+  animation-delay: 0.4s;
+}
+
+@keyframes animate {
+  0% {
+    border-color: transparent;
+    transform: translate(0, 0);
+  }
+  20% {
+    border-color: black;
+    transform: translate(0px, 0px);
+  }
+  40% {
+    border-color: black;
+    transform: translate(0px, 0px);
+  }
+  60% {
+    border-color: transparent;
+    transform: translate(0px, 0px);
+  }
+  80% {
+    border-color: transparent;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    border-color: transparent;
+    transform: translate(0px, 0px);
+  }
+}
+
+.description p {
+  color: white;
+  text-align: center;
+  max-width: 520px;
+  font-family: 'optimusprincepsregular';
 }
 
 /* countdown */
@@ -243,14 +273,6 @@ img.logovestra {
 
 /* countdown end */
 
-.socialmedia {
-  position: absolute;
-  margin-top: 100px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .fa {
   width: 85px;
   text-align: center;
@@ -258,7 +280,7 @@ img.logovestra {
   color: white;
   left: 50%;
   transform: scale(1.6);
-  padding-top: 30px;
+  margin-top: 80px;
 }
 .fa:hover {
   opacity: 0.7;
@@ -301,124 +323,6 @@ img.logovestra {
   }
 }
 
-/* h1 {
-  background: linear-gradient(-45deg, transparent 48%, rgba(255, 255, 255, 0.8) 50%, transparent 52% 100%), linear-gradient(45deg, #cdf0ea, #faf0d7, #9cb4cc);
-  animation: cahaya 3s ease infinite alternate;
-  background-size: 500% 500%, 100% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-family: 'harry_p';
-  font-size: 100px;
-  margin-bottom: -20px;
-}
-
-@keyframes cahaya {
-  0% {
-    background-position: 0, 0;
-  }
-  100% {
-    background-position: 100%, 100%;
-  }
-}
-
-p {
-  color: white;
-} */
-
-/* .playbutton {
-  font-family: sans-serif;
-  border: 0px;
-  text-decoration: none;
-  font-size: 15px;
-  border-radius: 50px;
-  color: white;
-  background-color: transparent;
-  border: 1.5px solid white;
-  cursor: pointer;
-  margin-top: 22px;
-  margin-bottom: 100px;
-  padding: 5px 60px;
-}
-
-.playbutton:hover {
-  color: black;
-  background-color: white;
-  transition: 0.3s ease-in;
-  text-transform: uppercase;
-} */
-
-/* .indicator {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  transform: rotate(45deg);
-  margin-bottom: 50px;
-}
-
-.indicator span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  box-sizing: border-box;
-  border: 1px solid #fff;
-  animation: animate 2s linear infinite;
-}
-
-.indicator span:nth-child(1) {
-  top: -30px;
-  left: -30px;
-  animation-delay: 0s;
-}
-.indicator span:nth-child(2) {
-  top: -15px;
-  left: -15px;
-  animation-delay: 0.2s;
-}
-.indicator span:nth-child(3) {
-  top: -0px;
-  left: -0px;
-  animation-delay: 0.4s;
-}
-
-@keyframes animate {
-  0% {
-    border-color: transparent;
-    transform: translate(0, 0);
-  }
-  20% {
-    border-color: #efefef;
-    transform: translate(0px, 0px);
-  }
-  40% {
-    border-color: #efefef;
-    transform: translate(0px, 0px);
-  }
-  60% {
-    border-color: transparent;
-    transform: translate(0px, 0px);
-  }
-  80% {
-    border-color: transparent;
-    transform: translate(0px, 0px);
-  }
-  100% {
-    border-color: transparent;
-    transform: translate(0px, 0px);
-  }
-}
-
-.description p {
-  color: white;
-  text-align: center;
-  max-width: 520px;
-  font-family: 'optimusprincepsregular';
-} */
-
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 32px;
@@ -453,28 +357,18 @@ p {
 }
 
 @media screen and (max-width: 572px) {
-  #landing h1 {
-    z-index: 99;
-    font-size: 35px;
-    top: 40%;
-    left: 0;
+  body {
+    background-size: cover;
   }
 
-  #landing img.logves {
-    width: 100px;
-    height: 100px;
-    top: 20%;
-    right: 0;
-    left: 35%;
+  img.backg {
+    width: 100%;
+    height: auto;
   }
 
   .content p {
     text-align: center;
     text-indent: 0;
-  }
-
-  /* h3 {
-    font-size: 10px;
   }
 
   p.slogan {
@@ -492,7 +386,7 @@ p {
 
   .playbutton {
     margin-top: -10px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .playbutton {
@@ -503,14 +397,15 @@ p {
   }
 
   .indicator {
-    position: relative;
+    overflow: hidden;
     left: 300px;
-  } */
+  }
 
   .fa {
     transform: scale(1.2);
     width: 30px;
-    padding-left: 25px;
+    padding-left: auto;
+    padding-right: auto;
   }
   .playbutton {
     transform: scale(0.6);

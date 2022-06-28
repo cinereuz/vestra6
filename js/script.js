@@ -75,6 +75,7 @@ let LayerKeenam = document.getElementsByClassName('layer6')[0];
 let LayerKetujuh = document.getElementsByClassName('layer7')[0];
 let LayerKedelapan = document.getElementsByClassName('layer8')[0];
 let LayerKesembilan = document.getElementsByClassName('layer9')[0];
+let LogoVestra = document.getElementsByClassName('logves')[0];
 let Vestra = document.querySelector('#landing h1');
 let Button = document.querySelector('.btn');
 
@@ -91,4 +92,5 @@ window.addEventListener('scroll', function () {
   LayerKesembilan.style.top = value * 1 + 'px';
   LayerKedelapan.style.top = value * 0 + 'px';
   Vestra.style.right = value * 0.7 + 'px';
+  LogoVestra.style.bottom = value * 1 + 'px';
 });
