@@ -53,7 +53,7 @@
 
 body {
   background-color: #af99da;
-  background-size: 100%;
+  background-size: 100vh;
   color: lightskyblue;
   display: flex;
   flex-direction: column;
