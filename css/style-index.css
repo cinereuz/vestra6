@@ -93,8 +93,8 @@ img.backg {
   overflow: hidden;
   position: absolute;
   top: -80px;
-  width: 1263px;
-  height: 720px;
+  width: 100vw;
+  height: 110vh;
   z-index: -2;
 }
 
