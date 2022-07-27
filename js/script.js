@@ -40,7 +40,7 @@ document.onkeydown = function (e) {
 };
 
 // countdown
-var countDate = new Date('Jul 27, 2022 00:00:00').getTime();
+var countDate = new Date('Aug 1, 2022 00:00:00').getTime();
 
 function dateNew() {
   var now = new Date().getTime();
