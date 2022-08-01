@@ -86,11 +86,15 @@ h1 {
   display: block;
 }
 
-.lomba video {
-  padding-bottom: 80px;
+.media-lomba {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  width: 52%;
 }
 
 .nama-lomba {
+  text-decoration: line-through;
   color: white;
 }
 
@@ -99,8 +103,27 @@ h1 {
   color: white;
 }
 
+.lomba-1 img.close {
+  width: 30%;
+  float: right;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(315deg);
+  right: 220px;
+  bottom: 180px;
+}
+.lomba-3 img.close {
+  width: 20%;
+  float: right;
+  position: absolute;
+  transform: rotate(315deg);
+  right: 200px;
+  top: 1500px;
+}
+
 .lomba-1 video {
-  width: 52%;
+  position: relative;
+  width: 100%;
   float: right;
   background-image: linear-gradient(0deg, rgba(16, 20, 27, 0.4), rgba(16, 20, 27, 0) 98%);
 }
@@ -535,6 +558,23 @@ a {
 
   .button-area {
     flex-direction: column;
+  }
+
+  .lomba-1 img.close {
+    width: 20%;
+    float: right;
+    position: absolute;
+    transform: rotate(315deg);
+    right: 60px;
+    top: -120px;
+  }
+  .lomba-3 img.close {
+    width: 20%;
+    float: right;
+    position: absolute;
+    transform: rotate(315deg);
+    right: 60px;
+    top: 630px;
   }
 
   p.nama-lomba-1 {
